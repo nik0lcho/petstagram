@@ -1,5 +1,5 @@
 """
-URL configuration for petsgram project.
+URL configuration for petstagram project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -20,8 +20,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('petsgram.common.urls')),
-    path('accounts/', include('petsgram.accounts.urls')),
-    path('pets/', include('petsgram.pets.urls')),
-    path('photos/', include('petsgram.photos.urls'))
+    path('', include('petstagram.common.urls')),
+    path('accounts/', include('petstagram.accounts.urls')),
+    path('pets/', include('petstagram.pets.urls')),
+    path('photos/', include('petstagram.photos.urls'))
 ]
